@@ -54,14 +54,6 @@ function download(filename, type, content) {
   setTimeout(() => URL.revokeObjectURL(a.href), 5000);
 }
 
-// Fallback, falls der Gateway (noch) kein vorname/nachname liefert (älterer, noch nicht
-// neu deployter admin-worker.js). Rät den Namen aus dem username (Format "vorname.nachname").
-function deriveNameFromUsername(username) {
-  const parts = String(username || "").split(".");
-  const cap = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
-  return { vorname: cap(parts[0] || ""), nachname: cap(parts.slice(1).join(" ") || "") };
-}
-
 function normalizeAppData(data) {
   const d = data && typeof data === "object" ? data : {};
   if (!Array.isArray(d.meldungen)) d.meldungen = [];
