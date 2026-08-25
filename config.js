@@ -5,6 +5,13 @@ const APP_CHANGELOG = [
     version: "1.1",
     groups: [
       {
+        title: "Benachrichtigungen",
+        items: [
+          "Eine neue Bedarfsmeldung meldete sich bisher auf den Geräten aller, die die App bearbeiten dürfen — also auch bei Trainerinnen und Trainern, die den Reiter „Verwaltung“ gar nicht sehen und deshalb nichts entscheiden können. Jetzt geht die Nachricht nur noch an die, die die Meldung tatsächlich freigeben oder ablehnen können.",
+          "An der Nachricht über eine getroffene Entscheidung ändert sich nichts: die bekommt weiterhin nur, wer die Meldung geschrieben hat."
+        ]
+      },
+      {
         title: "Am Handy",
         items: [
           "Bisher brach die Reiterleiste selbst um, die rechte Reiter-Gruppe darin aber nicht: Sie rutschte als ein Stück in die zweite Zeile und lief dort weiter über den rechten Rand hinaus. Jetzt bricht auch sie um, sobald sie zu breit wird. Zu sehen ist das nur, wenn genug Reiter nebeneinanderstehen — bis dahin sieht alles aus wie bisher."
