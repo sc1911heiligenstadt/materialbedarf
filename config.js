@@ -2,42 +2,13 @@ const APP_VERSION = "1.0";
 
 const APP_CHANGELOG = [
   {
-    version: "1.2",
-    groups: [
-      {
-        title: "Der Reiter „Info“ erklärt jetzt, was die App wirklich tut",
-        items: [
-          "Dort stand bisher ein einzelner Satz. Jetzt steht da, wofür die einzelnen Reiter da sind, was die App mit den Eingaben macht und wo etwas anderes hingehört.",
-          "Am Funktionsumfang ändert sich nichts — nur an der Beschreibung."
-        ]
-      }
-    ]
-  },
-  {
-    version: "1.1",
-    groups: [
-      {
-        title: "Benachrichtigungen",
-        items: [
-          "Eine neue Bedarfsmeldung meldete sich bisher auf den Geräten aller, die die App bearbeiten dürfen — also auch bei Trainerinnen und Trainern, die den Reiter „Verwaltung“ gar nicht sehen und deshalb nichts entscheiden können. Jetzt geht die Nachricht nur noch an die, die die Meldung tatsächlich freigeben oder ablehnen können.",
-          "An der Nachricht über eine getroffene Entscheidung ändert sich nichts: die bekommt weiterhin nur, wer die Meldung geschrieben hat."
-        ]
-      },
-      {
-        title: "Am Handy",
-        items: [
-          "Bisher brach die Reiterleiste selbst um, die rechte Reiter-Gruppe darin aber nicht: Sie rutschte als ein Stück in die zweite Zeile und lief dort weiter über den rechten Rand hinaus. Jetzt bricht auch sie um, sobald sie zu breit wird. Zu sehen ist das nur, wenn genug Reiter nebeneinanderstehen — bis dahin sieht alles aus wie bisher."
-        ]
-      }
-    ]
-  },
-  {
     version: "1.0",
     groups: [
       {
         title: "Bedarf melden",
         items: [
           "Trainerinnen und Trainer melden Materialbedarf mit einer oder mehreren Positionen aus Material und Menge, dazu Grund oder Verwendungszweck und die Dringlichkeit — normal oder dringend.",
+          "Die Mannschaft kommt aus dem eigenen Trainerprofil. Wer mehrere betreut, wählt sie aus einer Liste.",
           "Die eigenen Meldungen bleiben unter „Meine Meldungen“ mit ihrem aktuellen Stand sichtbar.",
           "Eine noch offene Meldung lässt sich zurückziehen."
         ]
@@ -46,7 +17,7 @@ const APP_CHANGELOG = [
         title: "Entscheiden",
         items: [
           "Der Reiter „Verwaltung“ zeigt ausschließlich die offenen Meldungen — was noch zu entscheiden ist, steht sofort im Blick.",
-          "Entschiedene Meldungen stehen im Reiter „Bearbeitet“ und sind dort nach Status filterbar.",
+          "Entschiedene Meldungen stehen im Reiter „Bearbeitet“ und sind dort nach Status filterbar: alle, angenommen, abgelehnt, bestellt oder verteilt.",
           "Der weitere Stand einer angenommenen Meldung lässt sich in beiden Reitern setzen.",
           "Zu jeder Meldung kann ein Kommentar hinterlegt werden.",
           "Beide Reiter haben einen Export als Text oder PDF — jeweils genau die Meldungen, die gerade angezeigt werden."
@@ -65,7 +36,7 @@ const APP_CHANGELOG = [
       {
         title: "Benachrichtigung aufs Handy",
         items: [
-          "Eine neue Meldung erreicht die Zuständigen direkt aufs Handy, statt liegen zu bleiben, bis jemand von sich aus nachsieht.",
+          "Eine neue Meldung erreicht direkt aufs Handy, wer sie freigeben oder ablehnen kann — statt liegen zu bleiben, bis jemand von sich aus nachsieht.",
           "Ist über eine Meldung entschieden worden, bekommt die meldende Person eine Nachricht.",
           "Die Nachricht nennt weder den gemeldeten Bedarf noch das Ergebnis — sie steht auf dem Sperrbildschirm. Was entschieden wurde, sieht man nach dem Antippen.",
           "Eingeschaltet wird das in der Tools-Übersicht unter „Mein Konto“, einzeln für dieses Werkzeug. Wer es nicht einschaltet, merkt keinen Unterschied.",
@@ -79,20 +50,21 @@ const APP_CHANGELOG = [
           "Bearbeiten: Bedarf melden und eigene offene Meldungen zurückziehen.",
           "Administrieren: annehmen, ablehnen, den weiteren Stand setzen, kommentieren, fremde Meldungen löschen und exportieren. Die Reiter „Verwaltung“ und „Bearbeitet“ sind nur auf dieser Stufe sichtbar.",
           "Die Trennung ist Absicht: Bedarf melden ist die tägliche Arbeit, über Geld entscheiden ist es nicht.",
-          "Der Reiter „Info“ ist für alle sichtbar."
+          "Der Reiter „Info“ ist für alle sichtbar. Dort stehen eine Kurzbeschreibung, diese Änderungsliste und der Datenschutzhinweis des Vereins."
         ]
       },
       {
         title: "Bedienung am Handy",
         items: [
           "Die Reiterleiste bricht am Handy um, statt seitlich aus dem Bild zu laufen — auch die hinteren Reiter sind auf schmalen Bildschirmen erreichbar.",
-          "Eingabefelder sind mindestens 16 Pixel groß, damit der iPhone-Browser beim Antippen nicht ungefragt in die Seite hineinzoomt und verschoben stehen bleibt."
+          "Eingabefelder sind groß genug, dass der iPhone-Browser beim Antippen nicht ungefragt in die Seite hineinzoomt."
         ]
       },
       {
         title: "Daten & Speicherung",
         items: [
-          "Gespeichert wird in der Vereins-Nextcloud über die zentrale Anmeldung der Tools-Übersicht — ein eigenes Passwort braucht es nicht."
+          "Gespeichert wird in der Vereins-Nextcloud über die zentrale Anmeldung der Tools-Übersicht — ein eigenes Passwort braucht es nicht.",
+          "Ändern zwei Leute gleichzeitig denselben Stand, lädt die App den fremden Stand nach und trägt die eigene Änderung noch einmal ein."
         ]
       }
     ]
